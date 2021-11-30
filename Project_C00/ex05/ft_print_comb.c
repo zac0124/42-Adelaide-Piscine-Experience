@@ -6,43 +6,41 @@
 /*   By: zmunkhja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/30 11:04:07 by zmunkhja          #+#    #+#             */
-/*   Updated: 2021/11/30 11:04:15 by zmunkhja         ###   ########.fr       */
+/*   Updated: 2021/11/30 14:54:11 by zmunkhja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include <unistd.h> 
 
-void ft_print_comb(void)
+void	ft_print_comb(void)
 {
-
-	char a;		
-	char b;
-	char c;
+	char	a;
+	char	b;
+	char	c;
 
 	a = '0';
-
-	while ( a<='7')
-	{ b = a+1;
-		while (b<='8')
-
-		{ c = b+1;
+	while (a <= '7' )
+	{
+		b = a + 1;
+		while (b <= '8')
+		{
+			c = b + 1;
 			while (c <= '9')
-
-			{	write ( 1,&a,1);
-				write (1,&b,1);
-				write (1,&c,1);
-
-				if (!(a=='7' && b=='8' && c=='9'))
-					write (1,", ",2);
+			{
+				write(1, &a, 1);
+				write(1, &b, 1);
+				write(1, &c, 1);
+				if (!(a == '7' && b == '8' && c == '9'))
+					write (1, ", ", 2);
 				c++;
 			}
 			b++;
 		}
 		a++;
 	}
-
 }
-int main(void)
 
-{ ft_print_comb();
+int	main(void)
+{
+	ft_print_comb();
 }
