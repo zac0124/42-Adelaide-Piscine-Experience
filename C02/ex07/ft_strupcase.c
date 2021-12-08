@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strupcase.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: zmunkhja <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/12/08 09:46:23 by zmunkhja          #+#    #+#             */
+/*   Updated: 2021/12/08 09:46:50 by zmunkhja         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 
 char	*ft_strupcase(char *str)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (str[i] != '\0')
@@ -14,7 +26,7 @@ char	*ft_strupcase(char *str)
 	str[i] = '\0';
 	return (str);
 }
-
+/*
 int main(void)
 {
 	char	a[] = "haHAxoXo";
@@ -28,5 +40,4 @@ int main(void)
 	ft_strupcase(c);
 	printf("%s\n", c);
 }
-
-
+*/

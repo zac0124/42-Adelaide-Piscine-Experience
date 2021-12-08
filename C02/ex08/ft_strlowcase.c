@@ -6,7 +6,7 @@
 /*   By: zmunkhja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 11:55:51 by zmunkhja          #+#    #+#             */
-/*   Updated: 2021/12/07 11:57:16 by zmunkhja         ###   ########.fr       */
+/*   Updated: 2021/12/08 09:47:12 by zmunkhja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_strlowcase(char *str)
 	str[i] = '\0';
 	return (str);
 }
-
+/*
 int	main(void)
 {
 	char	a[] = "ldkfjasf";
@@ -40,3 +40,4 @@ int	main(void)
 	ft_strlowcase(c);
 	printf("%s\n", c);
 }
+*/

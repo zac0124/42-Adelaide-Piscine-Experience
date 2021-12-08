@@ -6,7 +6,7 @@
 /*   By: zmunkhja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 10:09:31 by zmunkhja          #+#    #+#             */
-/*   Updated: 2021/12/07 11:04:02 by zmunkhja         ###   ########.fr       */
+/*   Updated: 2021/12/08 09:43:31 by zmunkhja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strcpy(char	*dest, char	*src)
 	dest[i] = '\0';
 	return (dest);
 }
-
+/*
 int	main(void)
 {
 	char	arr1[] = "hello";
@@ -36,3 +36,4 @@ int	main(void)
 	printf("%s\n", arr2);
 	return (0);
 }
+*/

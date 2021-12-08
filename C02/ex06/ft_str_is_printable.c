@@ -6,7 +6,7 @@
 /*   By: zmunkhja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/07 11:20:34 by zmunkhja          #+#    #+#             */
-/*   Updated: 2021/12/07 11:35:53 by zmunkhja         ###   ########.fr       */
+/*   Updated: 2021/12/08 15:56:28 by zmunkhja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,21 +19,18 @@ int	ft_str_is_printable(char *str)
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] > 32 && str[i] < 126)
-		{
-			return (1);
-			i++;
-		}
-		return (0);
+		if (str[i] < 32 || str[i] > 126)
+			return (0);
+		i++;
 	}
 	return (1);
 }
 
 int main(void)
 {
-	char	a[] = "394875029745";
-	char	b[] = "aiuhfilhdaiFIUHE";
-	char	c[] = "~!@#$%^&*";
+	char	a[] = "º¡£∞§§¶•¶∞¢§§£∞§™º–≠";
+	char	b[] = "aiuhfi56456lhdaiFIUHE";
+	char	c[] = "~!@#$%^&*ª£¶¢";
 	char	d[] = "";
 	int	printable;
 
