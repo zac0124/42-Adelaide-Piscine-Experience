@@ -6,7 +6,7 @@
 /*   By: zmunkhja <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/15 17:15:41 by zmunkhja          #+#    #+#             */
-/*   Updated: 2021/12/15 17:20:19 by zmunkhja         ###   ########.fr       */
+/*   Updated: 2021/12/18 15:35:36 by zmunkhja         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@ int	main(int argc, char **argv)
 	int	i;
 
 	i = 0;
+	argc = 0;
 	while (argv[0][i] != '\0')
 	{
 		write(1, &argv[0][i], 1);
