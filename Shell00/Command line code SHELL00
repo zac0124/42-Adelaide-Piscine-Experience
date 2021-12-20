@@ -1,0 +1,108 @@
+
+   
+
+ex00
+
+mkdir ex00
+touch z
+echo "Z" > z
+cat z
+
+ex01
+
+mkdir ex01
+touch testShell00
+chmod u-w testShell00
+chmod go+x testShell00
+ls -l 
+
+
+ex02
+
+mkdir test0
+chmod 715 test0
+touch test1
+chmod 714 test1
+
+mkdir test2
+chmod 504 test2
+
+touch test3
+chmod 404 test3
+touch test4
+chmod 641 test4 
+touch test5
+chmod 404 test4
+
+ln -s test0 test6 //symbolic link//
+chmod -h 777 test6 // -h tells chmod (and touch) to edit the symlink, not the file it links to (i.e. test0
+
+delete test3 and create link between test3 test5
+
+ex03
+
+klist
+klist > klist.txt
+cat klist.txt
+
+
+ex04
+
+mkdir ex04
+ls -mtp // -m Stream output format; list files accross the page, separated by comma.
+        -t sort by time modified, 
+	-p write slash p after each file name
+	-u use time of file creation //
+
+ex05
+
+git init create git rep
+touch git_commit.sh
+git commit -m "first" recording changes
+git commit -m "second"
+git commit -m "third"
+git commit -m "fourth"
+git commit -m "fifth"
+git status
+git log --pretty=%H | head -n 5 //format of the output//
+
+ex06
+
+
+mkdir ex06
+cd ex06
+touch git_ignore
+
+touch .gitignore
+vim .gitignore text editor
+git ls-files -o -i --exclude-standard
+
+ex07
+
+mkdir ex07
+patch a sw.diff -o b //output//
+
+Patch apply a diff file to an original
+-b creating b file
+-o output
+
+
+ex08
+find . -type f \( -name '#*#' -o -name '*~' \)  -print -delete
+- name True if the last component of the pathname being examined matches 
+- * mid alphabets
+- type f regular file
+- print evaluates true, print the pathname of the current file to standard output.
+- delete Delete found files and/or directoires.
+
+
+ex09
+file -C -m ft_magic
+-C meaning create
+-m meaning magic file
+
+
+vim ft_magic
+file -m ft_magic test
+
+String looks for static string
